@@ -11,6 +11,8 @@
 #include "CUDAImageProcessingDoc.h"
 #include "CUDAImageProcessingView.h"
 
+#include "Utility.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -22,7 +24,8 @@ BEGIN_MESSAGE_MAP(CCUDAImageProcessingApp, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, &CCUDAImageProcessingApp::OnAppAbout)
 	// Standard file based document commands
 	ON_COMMAND(ID_FILE_NEW, &CWinApp::OnFileNew)
-	ON_COMMAND(ID_FILE_OPEN, &CWinApp::OnFileOpen)
+	//ON_COMMAND(ID_FILE_OPEN, &CWinApp::OnFileOpen)
+	ON_COMMAND(ID_FILE_OPEN, &CCUDAImageProcessingApp::OnFileOpen)
 END_MESSAGE_MAP()
 
 
@@ -159,3 +162,22 @@ void CCUDAImageProcessingApp::OnAppAbout()
 
 
 
+
+
+void CCUDAImageProcessingApp::OnFileOpen()
+{
+	// TODO: Add your command handler code here
+	CFileDialog dlg(TRUE);
+
+	CString filename;
+	dlg.DoModal();
+	filename = dlg.GetPathName(); // return full path and filename
+
+	// Convert a TCHAR string to a LPCSTR
+	CT2CA pszConvertedAnsiString(filename);
+	// construct a std::string using the LPCSTR input
+	std::string filePath(pszConvertedAnsiString);
+	//Utility util;
+	Utility::SetImagePath(filePath);
+	//string tmp = Utility::GetImagePath();
+}
