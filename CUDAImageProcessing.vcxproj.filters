@@ -42,6 +42,9 @@
     <ClInclude Include="Utility.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CUDAImageProcessing.cpp">
@@ -71,6 +74,12 @@
   <ItemGroup>
     <None Include="res\CUDAImageProcessing.rc2">
       <Filter>Resource Files</Filter>
+    </None>
+    <None Include="D:\CECS_Project1_628_Ethan_Galyon\3_Shaders\basic.frag">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="D:\CECS_Project1_628_Ethan_Galyon\3_Shaders\basic.vs">
+      <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

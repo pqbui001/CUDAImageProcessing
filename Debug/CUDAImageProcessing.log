@@ -1,20 +1,35 @@
-﻿Build started 11/23/2015 4:30:06 PM.
+﻿Build started 11/24/2015 4:20:01 PM.
      1>Project "C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\CUDAImageProcessing.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\CUDAImageProcessing.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CUDAImageProcessing.cpp
-         CUDAImageProcessing.cpp
-     1>c:\users\ekgal\documents\github\cudaimageprocessing\utility.h(15): warning C4091: 'static ' : ignored on left of 'Utility' when no variable is declared
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.lib" /MACHINE:X86 Debug\CUDAImageProcessing.res
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.exe" /INCREMENTAL /NOLOGO opengl32.lib glew32s.lib glfw3.lib assimp.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.lib" /MACHINE:X86 Debug\CUDAImageProcessing.res
          Debug\CUDAImageProcessing.obj
          Debug\CUDAImageProcessingDoc.obj
          Debug\CUDAImageProcessingView.obj
          Debug\MainFrm.obj
          Debug\stdafx.obj
          Debug\Utility.obj
-         CUDAImageProcessing.vcxproj -> C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.exe
-     1>Done Building Project "C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\CUDAImageProcessing.vcxproj" (Build target(s)).
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewBindBuffer
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewBufferData
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewGenBuffers
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewAttachShader
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewCompileShader
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewCreateProgram
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewCreateShader
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewDeleteShader
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewEnableVertexAttribArray
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewGetProgramInfoLog
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewGetProgramiv
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewGetShaderInfoLog
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewGetShaderiv
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewLinkProgram
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewShaderSource
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewUseProgram
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewVertexAttribPointer
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewBindVertexArray
+     1>CUDAImageProcessingView.obj : error LNK2001: unresolved external symbol __imp____glewGenVertexArrays
+     1>C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\Debug\CUDAImageProcessing.exe : fatal error LNK1120: 19 unresolved externals
+     1>Done Building Project "C:\Users\ekgal\Documents\GitHub\CUDAImageProcessing\CUDAImageProcessing.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.78
+Time Elapsed 00:00:00.36
